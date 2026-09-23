@@ -39,7 +39,7 @@ export default function Navbar() {
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const currentLang = LANGS.find((l) => l.code === lang)!;
+  const currentLang = LANGS.find((l) => l.code === lang) || LANGS[0];
 
   return (
     <header
